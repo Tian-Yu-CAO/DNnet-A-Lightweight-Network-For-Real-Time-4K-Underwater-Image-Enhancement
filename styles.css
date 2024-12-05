@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%; /* Adjust this to fit your needs */
+    max-width: 3840px; /* Ensure it doesn't exceed the image width */
+    height: auto;
+}
+
+#before, #after {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.slider {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Adding a split bar */
+.split-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px; /* Adjust the width of the split bar */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    pointer-events: none; /* Make sure it doesn't interfere with the slider */
+}
