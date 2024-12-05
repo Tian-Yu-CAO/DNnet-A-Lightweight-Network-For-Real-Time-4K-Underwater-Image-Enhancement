@@ -1,26 +1,15 @@
-﻿# Welcome to the Repository
+﻿# DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization
 
-## ⚠️ Code not yet available
+## ⚠️ Code Coming Soon!
+Thank you for visiting the repository for DNnet – a lightweight network designed for real-time 4K underwater image enhancement using dynamic range and average normalization. We are currently finalizing the code and preparing it for release. Please check back soon for the official code release!
 
-Thank you for visiting this repository! Currently, the code for this research paper has not been published. We are in the process of preparing and cleaning the code for release. Once the code is ready, it will be made publicly available here.
+## 🛠️ About DNnet
+DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields.
 
-## 📜 Research Paper
-
-If you're interested in the research paper, you can find it here:
-
-- [Link to paper](#) (Replace with actual URL)
-
-## 🤝 Collaboration and Feedback
-
-If you have any questions, suggestions, or would like to collaborate, feel free to contact us:
-
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Researcher’s Profile: [Your Name on ResearchGate/Google Scholar/LinkedIn](#) (Replace with actual link)
-
-## 📅 Timeline for Code Release
-
-We aim to release the code by **[Month, Year]**. Please check back periodically for updates. Thank you for your patience!
-
+## 🚀 Key Features
+Real-Time 4K Image Enhancement: Tailored for high-resolution underwater imagery.
+Lightweight Architecture: Designed to be efficient without compromising performance.
+Dynamic Range and Average Normalization: Innovative approach for enhanced image quality in challenging underwater environments.
 ---
 
 Stay tuned and feel free to check the progress in the repository. We appreciate your interest in our work!
