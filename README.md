@@ -1,6 +1,6 @@
 ﻿# DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization
 
-[查看对比效果](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/Show4K/showcase.html)
+[查看对比效果](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/showcase.html)
 
 
 ## ⚠️ Code Coming Soon!
