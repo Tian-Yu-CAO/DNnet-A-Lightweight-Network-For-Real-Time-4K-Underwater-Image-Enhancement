@@ -1,14 +1,6 @@
 ﻿# DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization
 
-<head>
-  <link href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" rel="stylesheet">
-  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.js"></script>
-</head>
-
-<div id="juxtapose" style="width: 100%; height: 400px;">
-  <div class="juxtapose" data-before="https://github.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/blob/main/Show4K/Original.jpg" data-after="https://github.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/blob/main/Show4K/Enhanced.jpg"></div>
-</div>
-
+[查看对比效果](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/)
 
 
 ## ⚠️ Code Coming Soon!
