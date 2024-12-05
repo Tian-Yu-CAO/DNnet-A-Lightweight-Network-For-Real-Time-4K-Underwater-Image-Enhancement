@@ -7,9 +7,11 @@ Thank you for visiting the repository for DNnet – a lightweight network design
 DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields.
 
 ## 🚀 Key Features
-Real-Time 4K Image Enhancement: Tailored for high-resolution underwater imagery.
-Lightweight Architecture: Designed to be efficient without compromising performance.
-Dynamic Range and Average Normalization: Innovative approach for enhanced image quality in challenging underwater environments.
+
+* **Real-Time 4K Image Enhancement:** Tailored for high-resolution underwater imagery.
+* **Lightweight Architecture:** Designed to be efficient without compromising performance.
+* **Dynamic Range and Average Normalization:** Innovative approach for enhanced image quality in challenging underwater environments.
+
 ---
 
 Stay tuned and feel free to check the progress in the repository. We appreciate your interest in our work!
