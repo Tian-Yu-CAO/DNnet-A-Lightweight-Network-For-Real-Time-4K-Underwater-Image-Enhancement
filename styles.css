@@ -8,7 +8,7 @@ body {
 
 .container {
     position: relative;
-    width: 80%; /* Adjust this to fit your needs */
+    width: 100%; /* Adjust this to fit your needs */
     max-width: 3840px; /* Ensure it doesn't exceed the image width */
     height: auto;
 }
@@ -23,7 +23,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .slider {
@@ -34,9 +34,9 @@ body {
 /* Adding a split bar */
 .split-bar {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 10px; /* Adjust the width of the split bar */
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    top: calc(0%);
+    bottom: calc(3%);
+    width: 8px; /* Adjust the width of the split bar */
+    background: rgba(255, 255, 255, 1); /* Semi-transparent white */
     pointer-events: none; /* Make sure it doesn't interfere with the slider */
 }
