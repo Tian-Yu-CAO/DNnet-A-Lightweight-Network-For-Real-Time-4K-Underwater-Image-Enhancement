@@ -3,34 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=(); geolocation=(self)">
-    <title>图像对比效果</title>
-    <link href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" rel="stylesheet">
-    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 50px;
-        }
-        #juxtapose {
-            width: 80%;
-            margin: 50px auto;
-            height: 400px;
-        }
-    </style>
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>图像对比效果</h1>
-    <div id="juxtapose">
-        <div class="juxtapose" 
-             data-before="./Show4K/Original.jpg" 
-             data-after="./Show4K/Enhanced.jpg">
-        </div>
+    <div class="container">
+        <img id="before" src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Show4K/Enhanced.jpg" alt="Before Image" width="3840" height="2160">
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+        <img id="after" src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Show4K/Original.jpg" alt="After Image" width="3840" height="2160">
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
