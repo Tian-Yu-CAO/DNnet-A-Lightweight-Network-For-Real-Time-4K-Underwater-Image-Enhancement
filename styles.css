@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+body {
+    background-color: rgb(13, 17, 23,0.95);
+}
+
 .container {
     position: relative;
     width: 100%; /* Adjust this to fit your needs */
@@ -26,17 +30,70 @@ body {
     opacity: 1;
 }
 
-.slider {
-    width: 100%;
-    margin: 20px 0;
-}
 
 /* Adding a split bar */
 .split-bar {
     position: absolute;
     top: calc(0%);
-    bottom: calc(2%);
+    bottom: calc(4.5%);
     width: 8px; /* Adjust the width of the split bar */
     background: rgba(255, 255, 255, 1); /* Semi-transparent white */
     pointer-events: none; /* Make sure it doesn't interfere with the slider */
 }
+
+[type="range"] {
+    -webkit-appearance: none;
+    width: 101.3%;
+    appearance: none;
+    margin: 0;
+    margin-left: -24px;
+    outline: 0;
+    background-color: transparent;
+    overflow: hidden;
+    height: 100px;
+}
+
+    [type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+        background: #eee;
+        border-radius: 8px;
+    }
+
+    [type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #254e82;
+        transform: translateY(-40%);
+        margin-top: 0px;
+    }
+
+    [type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+        background: linear-gradient(#5ddaff 0 0) 0 0/calc(var(--progress) * 1%) 100% no-repeat #eee;
+        border-radius: 4px;
+    }
+
+@property --progress {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: true;
+}
+
+@keyframes slider {
+    to {
+        --progress: 100;
+    }
+}
+
+[type="range"] {
+    timeline-scope: --slider;
+    animation: slider linear 3s reverse;
+    animation-timeline: --slider;
+}
+
+    [type="range"]::-webkit-slider-thumb { /**/
+        view-timeline: --slider inline;
+    }
