@@ -35,7 +35,7 @@ body {
 .split-bar {
     position: absolute;
     top: calc(0%);
-    bottom: calc(3%);
+    bottom: calc(2%);
     width: 8px; /* Adjust the width of the split bar */
     background: rgba(255, 255, 255, 1); /* Semi-transparent white */
     pointer-events: none; /* Make sure it doesn't interfere with the slider */
