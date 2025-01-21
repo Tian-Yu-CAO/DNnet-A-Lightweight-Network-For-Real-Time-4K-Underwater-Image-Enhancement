@@ -1,5 +1,6 @@
 ﻿# DNnet: dynamic range and average normalization network
 
+[![ESWA](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.sciencedirect.com/science/article/pii/S0957417425001836?via%3Dihub)
 ![stars](https://img.shields.io/github/stars/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement)
 ![license](https://img.shields.io/github/license/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement)
 
