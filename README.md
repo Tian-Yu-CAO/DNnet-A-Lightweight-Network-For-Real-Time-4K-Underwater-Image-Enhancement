@@ -7,7 +7,7 @@ DNnet utilizes a dynamic range and average normalization technique to significan
 
 * **Dynamic Range and Average Normalization:**
  
-<img src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Structure.jpg" width="600" height="500">
+<img src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Structure.jpg" width="550" height="500">
 
 * **Lightweight Architecture:** 
 
