@@ -10,16 +10,23 @@ This repository is the official PyTorch implementation of DNnet: A lightweight n
 DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields. The key features of our approach are as follows:
 
 * **Architecture:**
- 
+
+<p align="center">
 <img src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Structure.jpg" width="480" height="500">
+</p>
 
-* **Deployment:** 
 
+* **Deployment:**
+
+<p align="center">
 <img src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Efficiency.jpg" width="600" height="200">
+</p>
 
 * **Performance:**
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Performance.jpg" width="600" height="300">
+</p>
 
 [Click here for 4K underwater image enhancement display!](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/)
 
