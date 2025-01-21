@@ -1,34 +1,22 @@
-﻿# DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization
+﻿# DNnet: dynamic range and average normalization network
 
-## 🛠️ About DNnet
-DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields.
+This repository is the official PyTorch implementation of DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization. [You can view the pre-proof version of our paper here.](https://www.sciencedirect.com/science/article/pii/S0957417425001836)  
 
-## 🚀 Key Features
+## 🚀 About DNnet
+DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields. The key features of our approach are as follows:
 
-* **Real-Time 4K Image Enhancement:** Tailored for high-resolution underwater imagery.
-* **Lightweight Architecture:** Designed to be efficient without compromising performance.
 * **Dynamic Range and Average Normalization:** Innovative approach for enhanced image quality in challenging underwater environments.
+[Sturcture](https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Structure.jpg)
+* **Lightweight Architecture:** Designed to be efficient without compromising performance.
+[Performance](https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Performance.jpg)
+* **Real-Time 4K Image Enhancement:** Tailored for high-resolution underwater imagery.
+[Efficiency](https://raw.githubusercontent.com/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/main/Features/Efficiency.jpg)
 
 [Click here for 4K underwater image enhancement display!](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/)
 
 [潭中鱼可百许头，皆若空游无所依😉](https://tian-yu-cao.github.io/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement/swim_in_air)
 
-## 📆 Current Code Status
-Thank you for visiting the repository for DNnet – a lightweight network designed for real-time 4K underwater image enhancement using dynamic range and average normalization. We have uploaded a pre-trained engine that has been trained on the **UIEB** dataset. This model, along with the associated test scripts, is available for evaluation in the **Model Validation and Testing** section.
-
-### Current Features:
-- **Pre-trained Model**: The engine has been trained on the UIEB dataset and is now available for validation.
-- **Test Scripts**: The testing code `engine_test.py` allows you to evaluate the performance of the pre-trained model. Simply run the script to see the model's results on the test data.
-
-### What’s Next:
-- **Progressive Updates**: This repository will be progressively updated with new versions of the model, each trained on different datasets or with new techniques. Stay tuned for future updates.
-- **Upcoming Enhancements**: Future versions will include improved performance metrics, extended support for more datasets, and new testing features.
-  
-We are actively working on improving the model and expanding its capabilities. Please refer to the **Model Validation and Testing** section for the latest updates and test results.
-
-We encourage you to try out the current model and provide feedback. More updates will be coming soon!
-
-## 💻 Model Validation and Testing
+## Testing
 This repository contains a pre-trained engine and corresponding validation files. You can use the `engine_test.py` script to evaluate our model's performance and view the test results. Some dependencies may require manual installation.
 
 ```bash
@@ -44,10 +32,21 @@ pip install -r requirements.txt
 # Run the test script
 python engine_test.py
 ```
-
-### Test Result
 After successfully running the script, a table containing various metrics should be displayed, and a folder containing enhanced images should be generated. **Notice: Due to the use of mixed precision compilation, the performance of TensorRT engine test may suffer some loss compared to PyTorch.**
 
+## Citation
+```bash
+@article{CAO2025126561,
+title = {DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization},
+journal = {Expert Systems with Applications},
+pages = {126561},
+year = {2025},
+issn = {0957-4174},
+doi = {https://doi.org/10.1016/j.eswa.2025.126561},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417425001836},
+author = {Tianyu Cao and Zhibin Yu and Bing Zheng}
+}
+```
 ---
 
 Stay tuned and feel free to check the progress in the repository. We appreciate your interest in our work!
