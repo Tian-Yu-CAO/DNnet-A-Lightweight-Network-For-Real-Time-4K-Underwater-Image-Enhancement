@@ -1,5 +1,7 @@
 ﻿# DNnet: dynamic range and average normalization network
 
+![Stars](https://img.shields.io/github/stars/Tian-Yu-CAO/repo?style=social)
+
 This repository is the official PyTorch implementation of DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization. [You can view the pre-proof version of our paper here.](https://www.sciencedirect.com/science/article/pii/S0957417425001836)  
 
 ## 🚀 About DNnet
