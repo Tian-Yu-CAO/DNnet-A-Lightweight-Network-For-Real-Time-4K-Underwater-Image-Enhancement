@@ -52,7 +52,7 @@ After successfully running the script, a table containing various metrics should
 
 
 ## Training
-This repository now contains files to train our model. Before training, [You need to download dataset here. 提取码：uieb](https://pan.baidu.com/s/1ey1RgCdnB8xwGeu3aQ5x3g?pwd=uieb)After downloading and unzipping the dataset,if you only need to train the model you can simply replace the datasets folder. If you would also like to test engine, you need to manually replace the subfolder of datasets. You can use the `train.py` script with following command:
+This repository now contains files to train our model. Before training, [you need to download dataset here. 提取码：uieb](https://pan.baidu.com/s/1ey1RgCdnB8xwGeu3aQ5x3g?pwd=uieb)After downloading and unzipping the dataset, if you only need to train the model you can simply replace the datasets folder. If you would also like to test engine, you need to manually replace the subfolder of datasets. You can use the `train.py` script with following command:
 
 ```bash
 # Run the train script
