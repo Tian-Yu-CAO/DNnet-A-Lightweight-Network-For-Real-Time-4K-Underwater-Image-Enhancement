@@ -4,7 +4,7 @@
 ![license](https://img.shields.io/github/license/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement)
 ![stars](https://img.shields.io/github/stars/Tian-Yu-CAO/DNnet-A-Lightweight-Network-For-Real-Time-4K-Underwater-Image-Enhancement)
 
-This repository is the official PyTorch implementation of DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization. [You can view the pre-proof version of our paper here.](https://www.sciencedirect.com/science/article/pii/S0957417425001836)  
+This repository is the official PyTorch implementation of DNnet: A lightweight network for real-time 4K underwater image enhancement using dynamic range and average normalization. [You can view the paper here.](https://www.sciencedirect.com/science/article/pii/S0957417425001836)  
 
 ## 🚀 About DNnet
 DNnet utilizes a dynamic range and average normalization technique to significantly improve the quality of underwater images captured in 4K resolution. The model is optimized for real-time processing, making it suitable for practical applications in marine research, underwater robotics, and other related fields. The key features of our approach are as follows:
@@ -49,6 +49,17 @@ pip install -r requirements.txt
 python engine_test.py
 ```
 After successfully running the script, a table containing various metrics should be displayed, and a folder containing enhanced images should be generated. **Notice: Due to the use of mixed precision compilation, the performance of TensorRT engine test may suffer some loss compared to PyTorch.**
+
+
+## Training
+This repository now contains files to train our model. Before training, [You need to download dataset here. 提取码：uieb](https://pan.baidu.com/s/1ey1RgCdnB8xwGeu3aQ5x3g?pwd=uieb)After downloading and unzipping the dataset,if you only need to train the model you can simply replace the datasets folder. If you would also like to test engine, you need to manually replace the subfolder of datasets. You can use the `train.py` script with following command:
+
+```bash
+# Run the train script
+python train.py
+```
+Note that we have provided a full training results file in this repository. You can find the record file in the directory ./work-dir/DNnet/UIEB/20250319/122851
+
 
 ## Citation
 ```bash

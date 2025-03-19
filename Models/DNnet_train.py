@@ -72,20 +72,15 @@ class DNnet(nn.Module):
         if n != 1:
             self.ps = nn.PixelShuffle(upscale_factor=n)
             self.pus = nn.PixelUnshuffle(downscale_factor=n)
-
-    def forward(self, x0):
-        if self.n != 1:
-            x = self.pus(x0)
-            x00 = self.stem0(x)
-            x11 = self.stem1(x)
-            c = self.cdr(x0)
-            xr = self.out0(self.relu(x00))
-            xw = self.out1(torch.abs(x11))
-            return self.fan(c * self.ps(xw * xr) + x0)
         else:
-            x00 = self.stem0(x0)
-            x11 = self.stem1(x0)
-            c = self.cdr(x0)
-            xr = self.out0(self.relu(x00))
-            xw = self.out1(torch.abs(x11))
-            return self.fan(c * xr * xw + x0)
+            self.ps = nn.Identity()
+            self.pus = nn.Identity()
+
+    def forward(self, x):
+        x0 = self.pus(x)
+        x00 = self.stem0(x0)
+        x11 = self.stem1(x0)
+        c = self.cdr(x)
+        xr = self.out0(self.relu(x00))
+        xw = self.out1(torch.abs(x11))
+        return self.fan(c * self.ps(xw * xr) + x)

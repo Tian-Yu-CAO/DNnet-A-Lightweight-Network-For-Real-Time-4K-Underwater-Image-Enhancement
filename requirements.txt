@@ -10,3 +10,5 @@ tensorrt_cu12==10.7.0
 torch==2.2.2
 torchvision==0.17.2
 tqdm==4.65.0
+mmengine
+torchsummary

@@ -14,10 +14,10 @@ from ntpath import basename
 import pycuda.driver as cuda
 from tabulate import tabulate
 from torchvision import transforms
-from Utils.uiqm_utils import getUIQM
-from Utils.dataloader import myDataSet
+from utils.uiqm_utils import getUIQM
+from utils.dataloader import myDataSet
 from torch.utils.data import DataLoader
-from Utils.ssm_psnr_utils import getSSIM, getPSNR
+from utils.ssim_psnr_utils import getSSIM, getPSNR
 
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"

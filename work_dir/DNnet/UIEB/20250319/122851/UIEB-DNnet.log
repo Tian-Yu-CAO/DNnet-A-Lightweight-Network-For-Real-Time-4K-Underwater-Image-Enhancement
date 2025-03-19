@@ -1,0 +1,347 @@
+[INFO] rank: -1
+[INFO] result path: C:\ProgramData\anaconda3\envs\a\proj1\traingithub\work_dir\DNnet\UIEB\20250319\122851
+
+
+-------------------- args --------------------
+data_path: ./datasets/UIEB/
+data_name: UIEB
+train_raw_dir_name: train_raw
+train_GT_dir_name: train_GT
+test_raw_dir_name: test_raw
+test_GT_dir_name: test_GT
+read_cache: True
+cache_dir: ./cache_dir/
+output_dir: ./work_dir\DNnet\UIEB\20250319/122851
+test_only: False
+resume: 
+amp: True
+model_name: DNnet
+model_speed: 1
+device: cuda
+lr: 0.0005
+lr_step_size: 6
+lr_gamma: 0.7
+num_epochs: 31
+start_epoch: 0
+train_batch_size: 8
+test_batch_size: 1
+size: 256
+weight_decay: 0.0001
+print_freq: 100
+seed: 0
+workers: 2
+------------------ args end ------------------
+[INFO] Loading data
+(1600, 3, 256, 256)
+(1600, 3, 256, 256)
+成功读取缓存文件
+(180, 3, 256, 256)
+(180, 3, 256, 256)
+成功读取缓存文件
+[INFO] Creating model
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+          Identity-1           [1, 3, 256, 256]               0
+            Conv2d-2          [1, 64, 256, 256]           1,792
+              Tanh-3          [1, 64, 256, 256]               0
+            Conv2d-4          [1, 64, 256, 256]             256
+              Tanh-5          [1, 64, 256, 256]               0
+         AvgPool2d-6             [1, 3, 32, 32]               0
+                DR-7               [1, 3, 1, 1]               0
+               CDR-8               [1, 3, 1, 1]               0
+              ReLU-9          [1, 64, 256, 256]               0
+           Conv2d-10           [1, 3, 256, 256]           1,731
+           Conv2d-11           [1, 3, 256, 256]             195
+         Identity-12           [1, 3, 256, 256]               0
+        AvgPool2d-13             [1, 3, 42, 42]               0
+              FAN-14           [1, 3, 256, 256]               0
+================================================================
+Total params: 3,974
+Trainable params: 3,974
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 167.56
+Params size (MB): 0.02
+Estimated Total Size (MB): 168.33
+----------------------------------------------------------------
+[INFO] Start training
+Epoch: [0]  [  0/100]  lr: 0.000500  loss: 0.2199 (0.2199)  max mem: 597
+Epoch: [0] Total time: 0:00:12
+SSIM >> Mean: 0.892335 std: 0.067442
+PSNR >> Mean: 25.653100 std: 7.020169
+MSE >> Total: 416.963297 std: 507.917324
+
+[FEAT] Best PSNR: 25.653
+
+
+[FEAT] Best SSIM: 0.892
+
+
+[FEAT] Best MSE: 416.963
+
+Epoch: [1]  [  0/100]  lr: 0.000500  loss: 0.2014 (0.2014)  max mem: 597
+Epoch: [1] Total time: 0:00:12
+SSIM >> Mean: 0.901458 std: 0.068143
+PSNR >> Mean: 25.834023 std: 6.750056
+MSE >> Total: 410.152866 std: 535.229503
+
+[FEAT] Best PSNR: 25.834
+
+
+[FEAT] Best SSIM: 0.901
+
+
+[FEAT] Best MSE: 410.153
+
+Epoch: [2]  [  0/100]  lr: 0.000500  loss: 0.1436 (0.1436)  max mem: 597
+Epoch: [2] Total time: 0:00:12
+SSIM >> Mean: 0.905303 std: 0.067657
+PSNR >> Mean: 25.907275 std: 6.474845
+MSE >> Total: 393.534118 std: 526.632434
+
+[FEAT] Best PSNR: 25.907
+
+
+[FEAT] Best SSIM: 0.905
+
+
+[FEAT] Best MSE: 393.534
+
+Epoch: [3]  [  0/100]  lr: 0.000500  loss: 0.1437 (0.1437)  max mem: 597
+Epoch: [3] Total time: 0:00:11
+SSIM >> Mean: 0.907398 std: 0.066886
+PSNR >> Mean: 25.943570 std: 6.274685
+MSE >> Total: 384.088792 std: 531.367211
+
+[FEAT] Best PSNR: 25.944
+
+
+[FEAT] Best SSIM: 0.907
+
+
+[FEAT] Best MSE: 384.089
+
+Epoch: [4]  [  0/100]  lr: 0.000500  loss: 0.1237 (0.1237)  max mem: 597
+Epoch: [4] Total time: 0:00:11
+SSIM >> Mean: 0.907809 std: 0.067239
+PSNR >> Mean: 26.047196 std: 6.458689
+MSE >> Total: 385.441550 std: 541.406300
+
+[FEAT] Best PSNR: 26.047
+
+
+[FEAT] Best SSIM: 0.908
+
+Epoch: [5]  [  0/100]  lr: 0.000500  loss: 0.1599 (0.1599)  max mem: 597
+Epoch: [5] Total time: 0:00:11
+SSIM >> Mean: 0.908555 std: 0.066832
+PSNR >> Mean: 25.961705 std: 6.330050
+MSE >> Total: 390.389826 std: 555.647204
+
+[FEAT] Best SSIM: 0.909
+
+Epoch: [6]  [  0/100]  lr: 0.000350  loss: 0.1309 (0.1309)  max mem: 597
+Epoch: [6] Total time: 0:00:12
+SSIM >> Mean: 0.907675 std: 0.067252
+PSNR >> Mean: 25.915578 std: 6.416263
+MSE >> Total: 399.757227 std: 566.078206
+Epoch: [7]  [  0/100]  lr: 0.000350  loss: 0.0855 (0.0855)  max mem: 597
+Epoch: [7] Total time: 0:00:11
+SSIM >> Mean: 0.908210 std: 0.068158
+PSNR >> Mean: 26.130575 std: 6.599451
+MSE >> Total: 391.398912 std: 552.694422
+
+[FEAT] Best PSNR: 26.131
+
+Epoch: [8]  [  0/100]  lr: 0.000350  loss: 0.2180 (0.2180)  max mem: 597
+Epoch: [8] Total time: 0:00:11
+SSIM >> Mean: 0.909116 std: 0.067167
+PSNR >> Mean: 26.131581 std: 6.519202
+MSE >> Total: 388.714910 std: 555.233246
+
+[FEAT] Best PSNR: 26.132
+
+
+[FEAT] Best SSIM: 0.909
+
+Epoch: [9]  [  0/100]  lr: 0.000350  loss: 0.2158 (0.2158)  max mem: 597
+Epoch: [9] Total time: 0:00:12
+SSIM >> Mean: 0.909489 std: 0.066938
+PSNR >> Mean: 26.097220 std: 6.526646
+MSE >> Total: 390.736165 std: 552.897302
+
+[FEAT] Best SSIM: 0.909
+
+Epoch: [10]  [  0/100]  lr: 0.000350  loss: 0.2979 (0.2979)  max mem: 597
+Epoch: [10] Total time: 0:00:11
+SSIM >> Mean: 0.909773 std: 0.066618
+PSNR >> Mean: 26.123868 std: 6.545607
+MSE >> Total: 390.841884 std: 556.733882
+
+[FEAT] Best SSIM: 0.910
+
+Epoch: [11]  [  0/100]  lr: 0.000350  loss: 0.0871 (0.0871)  max mem: 597
+Epoch: [11] Total time: 0:00:11
+SSIM >> Mean: 0.909840 std: 0.065717
+PSNR >> Mean: 26.062169 std: 6.475993
+MSE >> Total: 392.410190 std: 563.363680
+
+[FEAT] Best SSIM: 0.910
+
+Epoch: [12]  [  0/100]  lr: 0.000245  loss: 0.1124 (0.1124)  max mem: 597
+Epoch: [12] Total time: 0:00:11
+SSIM >> Mean: 0.909994 std: 0.066229
+PSNR >> Mean: 26.214757 std: 6.549990
+MSE >> Total: 384.731729 std: 554.036211
+
+[FEAT] Best PSNR: 26.215
+
+
+[FEAT] Best SSIM: 0.910
+
+Epoch: [13]  [  0/100]  lr: 0.000245  loss: 0.0721 (0.0721)  max mem: 597
+Epoch: [13] Total time: 0:00:11
+SSIM >> Mean: 0.910552 std: 0.065826
+PSNR >> Mean: 26.137834 std: 6.476887
+MSE >> Total: 388.297746 std: 562.327198
+
+[FEAT] Best SSIM: 0.911
+
+Epoch: [14]  [  0/100]  lr: 0.000245  loss: 0.2071 (0.2071)  max mem: 597
+Epoch: [14] Total time: 0:00:11
+SSIM >> Mean: 0.910884 std: 0.065998
+PSNR >> Mean: 26.182920 std: 6.533542
+MSE >> Total: 387.764110 std: 563.029267
+
+[FEAT] Best SSIM: 0.911
+
+Epoch: [15]  [  0/100]  lr: 0.000245  loss: 0.0807 (0.0807)  max mem: 597
+Epoch: [15] Total time: 0:00:12
+SSIM >> Mean: 0.910726 std: 0.066060
+PSNR >> Mean: 26.152081 std: 6.496396
+MSE >> Total: 388.798675 std: 562.942850
+Epoch: [16]  [  0/100]  lr: 0.000245  loss: 0.0998 (0.0998)  max mem: 597
+Epoch: [16] Total time: 0:00:12
+SSIM >> Mean: 0.911066 std: 0.065679
+PSNR >> Mean: 26.252305 std: 6.567194
+MSE >> Total: 382.454922 std: 558.895008
+
+[FEAT] Best PSNR: 26.252
+
+
+[FEAT] Best SSIM: 0.911
+
+
+[FEAT] Best MSE: 382.455
+
+Epoch: [17]  [  0/100]  lr: 0.000245  loss: 0.1597 (0.1597)  max mem: 597
+Epoch: [17] Total time: 0:00:11
+SSIM >> Mean: 0.911110 std: 0.065740
+PSNR >> Mean: 26.268854 std: 6.638155
+MSE >> Total: 384.713781 std: 561.796133
+
+[FEAT] Best PSNR: 26.269
+
+
+[FEAT] Best SSIM: 0.911
+
+Epoch: [18]  [  0/100]  lr: 0.000171  loss: 0.1417 (0.1417)  max mem: 597
+Epoch: [18] Total time: 0:00:11
+SSIM >> Mean: 0.910924 std: 0.065980
+PSNR >> Mean: 26.272637 std: 6.636957
+MSE >> Total: 385.488812 std: 562.763884
+
+[FEAT] Best PSNR: 26.273
+
+Epoch: [19]  [  0/100]  lr: 0.000171  loss: 0.2042 (0.2042)  max mem: 597
+Epoch: [19] Total time: 0:00:11
+SSIM >> Mean: 0.911004 std: 0.066035
+PSNR >> Mean: 26.271710 std: 6.660484
+MSE >> Total: 386.260583 std: 560.737170
+Epoch: [20]  [  0/100]  lr: 0.000171  loss: 0.1385 (0.1385)  max mem: 597
+Epoch: [20] Total time: 0:00:11
+SSIM >> Mean: 0.911072 std: 0.065963
+PSNR >> Mean: 26.305143 std: 6.729590
+MSE >> Total: 385.695958 std: 558.379893
+
+[FEAT] Best PSNR: 26.305
+
+Epoch: [21]  [  0/100]  lr: 0.000171  loss: 0.0755 (0.0755)  max mem: 597
+Epoch: [21] Total time: 0:00:12
+SSIM >> Mean: 0.911147 std: 0.065859
+PSNR >> Mean: 26.244967 std: 6.647742
+MSE >> Total: 387.978469 std: 562.897843
+
+[FEAT] Best SSIM: 0.911
+
+Epoch: [22]  [  0/100]  lr: 0.000171  loss: 0.0847 (0.0847)  max mem: 597
+Epoch: [22] Total time: 0:00:11
+SSIM >> Mean: 0.911092 std: 0.065811
+PSNR >> Mean: 26.262200 std: 6.633304
+MSE >> Total: 386.873570 std: 563.084101
+Epoch: [23]  [  0/100]  lr: 0.000171  loss: 0.1039 (0.1039)  max mem: 597
+Epoch: [23] Total time: 0:00:11
+SSIM >> Mean: 0.911164 std: 0.066139
+PSNR >> Mean: 26.281635 std: 6.622517
+MSE >> Total: 386.088225 std: 564.212925
+
+[FEAT] Best SSIM: 0.911
+
+Epoch: [24]  [  0/100]  lr: 0.000120  loss: 0.1584 (0.1584)  max mem: 597
+Epoch: [24] Total time: 0:00:11
+SSIM >> Mean: 0.911117 std: 0.066232
+PSNR >> Mean: 26.196797 std: 6.597310
+MSE >> Total: 393.032853 std: 574.089158
+Epoch: [25]  [  0/100]  lr: 0.000120  loss: 0.2010 (0.2010)  max mem: 597
+Epoch: [25] Total time: 0:00:11
+SSIM >> Mean: 0.911546 std: 0.065867
+PSNR >> Mean: 26.305950 std: 6.696705
+MSE >> Total: 387.478286 std: 571.213921
+
+[FEAT] Best PSNR: 26.306
+
+
+[FEAT] Best SSIM: 0.912
+
+Epoch: [26]  [  0/100]  lr: 0.000120  loss: 0.1258 (0.1258)  max mem: 597
+Epoch: [26] Total time: 0:00:11
+SSIM >> Mean: 0.911526 std: 0.065817
+PSNR >> Mean: 26.313312 std: 6.656853
+MSE >> Total: 385.293731 std: 568.696275
+
+[FEAT] Best PSNR: 26.313
+
+Epoch: [27]  [  0/100]  lr: 0.000120  loss: 0.2230 (0.2230)  max mem: 597
+Epoch: [27] Total time: 0:00:11
+SSIM >> Mean: 0.911323 std: 0.066149
+PSNR >> Mean: 26.299455 std: 6.668715
+MSE >> Total: 387.195190 std: 567.966443
+Epoch: [28]  [  0/100]  lr: 0.000120  loss: 0.3529 (0.3529)  max mem: 597
+Epoch: [28] Total time: 0:00:11
+SSIM >> Mean: 0.911711 std: 0.065828
+PSNR >> Mean: 26.352331 std: 6.718488
+MSE >> Total: 384.650201 std: 569.513711
+
+[FEAT] Best PSNR: 26.352
+
+
+[FEAT] Best SSIM: 0.912
+
+Epoch: [29]  [  0/100]  lr: 0.000120  loss: 0.1404 (0.1404)  max mem: 597
+Epoch: [29] Total time: 0:00:11
+SSIM >> Mean: 0.911525 std: 0.065875
+PSNR >> Mean: 26.323008 std: 6.720559
+MSE >> Total: 387.277366 std: 570.937763
+Epoch: [30]  [  0/100]  lr: 0.000084  loss: 0.1885 (0.1885)  max mem: 597
+Epoch: [30] Total time: 0:00:11
+SSIM >> Mean: 0.911707 std: 0.066267
+PSNR >> Mean: 26.363003 std: 6.734302
+MSE >> Total: 382.844745 std: 560.944263
+
+[FEAT] Best PSNR: 26.363
+
+
+[INFO] Best PSNR: 26.363, Best SSIM: 0.912, Best MSE: 382.455
+Training time 0:11:13
